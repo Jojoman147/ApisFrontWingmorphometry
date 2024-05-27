@@ -13,3 +13,6 @@ opencv-python 4.9.0.80
 pandas 2.2.2
 
 openpyxl 3.1.2
+
+
+We tested the program using Visual studio Comunity 2022 using Python 3.9
