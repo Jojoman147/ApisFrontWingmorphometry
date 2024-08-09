@@ -1,6 +1,6 @@
 # ApisWingmorphometry
 The program uses the DAWINO method to determine the affiliation of the bee wing sample to the bee subspecies. By defining 19 points from the methodology, it calculates the values of the defined traits.
-![Sample for adding points](https://github.com/Jojoman147/ApisWingmorphometry/blob/main/Readme_resources/Sample_of_wing.png)
+![Sample for adding points](https://github.com/Jojoman147/ApisFrontWingmorphometry/blob/945fa757550a328037140145f3901d9d7172826d/Readme_resources/Sample%20of%20wing.jpg).
 
 ## Required packages:
 
