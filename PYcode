@@ -181,6 +181,15 @@ def zobraz_obrazok():
         plocha = vypocet_plochy_polygonu(body_polygonu,skala)
         data.append(['Area 6', f'{plocha}'])
 
+        Cubital_index = vzdialenostA / vzdialenostB
+        data.append(['Cubital index:', f'{Cubital_index:.4f}'])
+        Preubital_index = predlaketnyC / predlaketnyM
+        data.append(['Preubital index:', f'{Preubital_index:.4f}'])
+        Dumb_bell_index = cinkovyC / cinkovyM
+        data.append(['Dumb-bell_index', f'{Dumb_bell_index:.4f}'])               
+        Radial_index = aR / bR
+        data.append(['Radial index', f'{Radial_index:.4f}'])
+
 
     # Vytvorenie DataFrame a export do Excelu
     df = pd.DataFrame(data, columns=['Parameter', 'Hodnota'])
