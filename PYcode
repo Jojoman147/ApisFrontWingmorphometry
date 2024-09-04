@@ -112,62 +112,57 @@ def zobraz_obrazok():
         DO = vypocet_vzdialenosti_DO(bod5, bod55, skala)
         data.append(['Vzdialenosť DO', f'{DO}'])
         
-
     if len(body) >= 3:
        
         # Výpočet vzdialenosti
         vzdialenostA = vypocet_vzdialenosti(body[4], body[6], skala)
-        data.append(['Dlzka A', f'{vzdialenostA}'])
+        data.append([' A', f'{vzdialenostA}'])
         vzdialenostB = vypocet_vzdialenosti(body[3], body[4], skala)
-        data.append(['Dlzka B', f'{vzdialenostB}'])
+        data.append([' B', f'{vzdialenostB}'])
         vzdialenostC = vypocet_vzdialenosti(body[5], body[6], skala)
-        data.append(['Dlzka C', f'{vzdialenostC}'])
+        data.append([' C', f'{vzdialenostC}'])
         vzdialenostD = vypocet_vzdialenosti(body[13], body[17], skala)
-        data.append(['Dlzka D', f'{vzdialenostD}'])
+        data.append([' D ', f'{vzdialenostD}'])
         vnutornadlzka = vypocet_vzdialenosti(body[3], body[16], skala)
-        data.append(['vnutornadlzka', f'{vnutornadlzka}'])
+        data.append(['inner length', f'{vnutornadlzka}'])
         vnutornasirka = vypocet_vzdialenosti(body[9], body[15], skala)
-        data.append(['vnutornasirka', f'{vnutornasirka}'])
+        data.append(['inner width', f'{vnutornasirka}'])
         radialfield = vypocet_vzdialenosti(body[2], body[9], skala)
         data.append(['radialfield', f'{radialfield}'])
         predlaketnyC = vypocet_vzdialenosti(body[6], body[11], skala)
-        data.append(['predlaketnyC', f'{predlaketnyC}'])
+        data.append(['Preubital indexC', f'{predlaketnyC}'])
         predlaketnyM = vypocet_vzdialenosti(body[10], body[12], skala)
-        data.append(['predlaketnyM', f'{predlaketnyM}'])
+        data.append(['Preubital indexM', f'{predlaketnyM}'])
         cinkovyC = vypocet_vzdialenosti(body[3], body[6], skala)
-        data.append(['cinkovyC', f'{cinkovyC}'])
+        data.append(['Dumb_bell indexC', f'{cinkovyC}'])
         cinkovyM = vypocet_vzdialenosti(body[7], body[8], skala)
-        data.append(['cinkovyM', f'{cinkovyM}'])
-
-
-
-    if len(body) >= 4:
+        data.append(['Dumb_bell indexM', f'{cinkovyM}'])
         uhol_A1 = vypocet_uhla(body[4], body[3], body[6])
-        data.append(['Uhol A1', f'{uhol_A1}'])
+        data.append(['Angle A1', f'{uhol_A1}'])
         uhol_A4 = vypocet_uhla(body[6], body[3], body[7])
-        data.append(['Uhol A4', f'{uhol_A4}'])
+        data.append(['Angle A4', f'{uhol_A4}'])
         uhol_B3 = vypocet_uhla(body[3], body[6], body[5])
-        data.append(['Uhol B3', f'{uhol_B3}'])
+        data.append(['Angle B3', f'{uhol_B3}'])
         uhol_B4 = vypocet_uhla(body[3], body[6], body[7])
-        data.append(['Uhol B4', f'{uhol_B4}'])
+        data.append(['Angle B4', f'{uhol_B4}'])
         uhol_D7 = vypocet_uhla(body[6], body[5], body[15])
-        data.append(['Uhol D7', f'{uhol_D7}'])
+        data.append(['Angle D7', f'{uhol_D7}'])
         uhol_E9 = vypocet_uhla(body[8], body[7], body[12])
-        data.append(['Uhol E9', f'{uhol_E9}'])
+        data.append(['Angle E9', f'{uhol_E9}'])
         uhol_G7 = vypocet_uhla(body[5], body[15], body[6])
-        data.append(['Uhol G7', f'{uhol_G7}'])
+        data.append(['Angle G7', f'{uhol_G7}'])
         uhol_G18 = vypocet_uhla(body[14], body[15], body[16])
-        data.append(['Uhol G18', f'{uhol_G18}'])
+        data.append(['Angle G18', f'{uhol_G18}'])
         uhol_H12 = vypocet_uhla(body[13], body[12], body[14])
-        data.append(['Uhol H12', f'{uhol_H12}'])
+        data.append(['Angle H12', f'{uhol_H12}'])
         uhol_J10 = vypocet_uhla(body[8], body[11], body[12])
-        data.append(['Uhol J10', f'{uhol_J10}'])
+        data.append(['Angle J10', f'{uhol_J10}'])
         uhol_J16 = vypocet_uhla(body[10], body[11], body[20])
-        data.append(['Uhol J16', f'{uhol_J16}'])
+        data.append(['Angle J16', f'{uhol_J16}'])
         uhol_K19 = vypocet_uhla(body[14], body[13], body[16])
-        data.append(['Uhol K19', f'{uhol_K19}'])
+        data.append(['Angle K19', f'{uhol_K19}'])
         uhol_L13 = vypocet_uhla(body[7], body[9], body[8])
-        data.append(['Uhol L13', f'{uhol_L13}'])
+        data.append(['Angle L13', f'{uhol_L13}'])
         uhol_M17 = vypocet_uhla(body[9], body[10], body[20])
         data.append(['Uhol M17', f'{uhol_M17}'])
         uhol_N23 = vypocet_uhla(body[11], body[20], body[19])
@@ -175,7 +170,7 @@ def zobraz_obrazok():
         uhol_O26 = vypocet_uhla(body[17], body[16], body[18])
         data.append(['Uhol O26', f'{uhol_O26}'])
         uhol_Q21 = vypocet_uhla(body[13], body[18], body[19])
-        data.append(['Uhol Q21', f'{uhol_Q21}'])
+        data.append(['Angle Q21', f'{uhol_Q21}'])
 
         body_polygonu = [body[i] for i in [3,7,9,20,19,18,17,16,15,14,5,4]]
         plocha = vypocet_plochy_polygonu(body_polygonu,skala)
@@ -186,19 +181,18 @@ def zobraz_obrazok():
         Preubital_index = predlaketnyC / predlaketnyM
         data.append(['Preubital index:', f'{Preubital_index:.4f}'])
         Dumb_bell_index = cinkovyC / cinkovyM
-        data.append(['Dumb-bell_index', f'{Dumb_bell_index:.4f}'])               
+        data.append(['Dumb_bell index', f'{Dumb_bell_index:.4f}'])               
         Radial_index = aR / bR
         data.append(['Radial index', f'{Radial_index:.4f}'])
-
 
     # Vytvorenie DataFrame a export do Excelu
     df = pd.DataFrame(data, columns=['Parameter', 'Hodnota'])
     
     # Kontrola, či súbor už existuje, a prípadne pridanie čísla na koniec názvu súboru
     i = 1
-    while os.path.exists(f'vysledky{i}.xlsx'):
+    while os.path.exists(f'results{i}.xlsx'):
         i += 1
 
-    df.to_excel(f'vysledky{i}.xlsx', index=False)
+    df.to_excel(f'results{i}.xlsx', index=False)
 # Zavolanie funkcie
 zobraz_obrazok()
