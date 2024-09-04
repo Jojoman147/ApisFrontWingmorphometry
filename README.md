@@ -17,3 +17,4 @@ openpyxl 3.1.2
 Package versions express the minimum requirements for the script to function properly
 
 We tested the program using Visual Studio Comunity 2022 using Python 3.9
+Coming soon: automatic calibration
